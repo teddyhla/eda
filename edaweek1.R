@@ -5,3 +5,5 @@
 # task5 correct Rcodes for each plot files
 # note for each plot need to save it to a PNG file, with width and height - 480pixels
 #name in plot 1.pmg 
+
+test <- "R"
