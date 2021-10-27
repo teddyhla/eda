@@ -1,14 +1,5 @@
-#################TASKS#
-################
+####THIS IS AN R CODE File that cleans and prepares data
 
-
-# task1 valid github url containing repository
-# task2 need to contain commit to the repo
-# task3 are there plot files
-# task4 are the plot files correct
-# task5 correct Rcodes for each plot files
-# note for each plot need to save it to a PNG file, with width and height - 480pixels
-#name in plot 1.pmg 
 
 # size of df = 2,075,259 rows and 9 columns would require 142 MB 
 
@@ -29,9 +20,3 @@ df$datetime <- strptime(df$datetime,"%Y-%m-%d %H:%M:%S")
 data <- df[df$Date >= "2007-02-01" & df$Date <= "2007-02-02",]
 rm(df)
 ##we remove the large datasets
-
-###plot1
-plot1 <- hist(data$Global_active_power,breaks = 12, col = "red", xlab ="Global Active Power (kilowatts)", main = "Global Active Power",y = 0:1200)
-
-#### plot2
-plot2 <- plot(data$datetime,data$Global_active_power,type = "l",ylab = "Global Active Power(kilowatts)",xlab = "")
